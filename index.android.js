@@ -83,7 +83,7 @@ componentWillMount: function(){
   render: function(){
     return (
       <TouchableHighlight onPress={this._onFacebookPress}>
-          <View style={styles.login}>
+          <View style={[styles.login, this.props.style]}>
               <Text style={styles.whiteFont}> {this.state.buttonText} </Text>
           </View>
       </TouchableHighlight>
